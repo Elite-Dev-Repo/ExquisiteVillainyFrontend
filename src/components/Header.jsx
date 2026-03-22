@@ -34,16 +34,22 @@ function Header() {
         </h1>
       </div>
 
-      <div className="absolute left-10 bottom-5">
-        <ul>
+      <div className="absolute left-6 md:left-12 bottom-12 z-20">
+        <ul className="flex flex-col gap-3">
           {navs.map((nav, i) => {
             return (
               <li
                 key={i}
-                className="font-semibold text-secondary/70 hover:scale-110 hover:text-secondary hover:translate-x-2.5 duration-300 cursor-pointer transition-all"
+                className="group font-black text-secondary/50 hover:text-secondary duration-300 cursor-pointer transition-all flex items-center gap-3"
+                style={{ transitionDelay: `${i * 50}ms` }}
               >
-                {" "}
-                <a href={nav.href}>- {nav.title}</a>
+                <div className="w-0 group-hover:w-8 h-[2px] bg-secondary transition-all duration-300" />
+                <a
+                  href={nav.href}
+                  className="uppercase tracking-[0.2em] text-xs md:text-sm group-hover:translate-x-2 transition-transform block"
+                >
+                  {nav.title}
+                </a>
               </li>
             );
           })}

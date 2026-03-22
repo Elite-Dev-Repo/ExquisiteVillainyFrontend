@@ -8,14 +8,14 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden">
       <Header />
       <About />
       <Image />
       <Whatitis />
       <CTA />
       <Footer />
-    </>
+    </div>
   );
 };
 
