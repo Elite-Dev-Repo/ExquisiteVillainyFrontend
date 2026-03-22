@@ -11,7 +11,7 @@ const About = () => {
           transition={{ delay: 0.2 }}
           exit={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="text-2xl leading-12 md:leading-normal md:text-[3em] mx-auto max-w-screen w-[800px] uppercase"
+          className="text-2xl leading-12 md:leading-normal px-6 md:text-[3em] mx-auto max-w-screen w-[800px] uppercase"
         >
           <span className="text-secondary bg-primary px-4 py-2 rounded-sm">
             Exquisite Villainy
